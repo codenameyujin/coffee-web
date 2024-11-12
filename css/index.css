@@ -225,13 +225,13 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
-  color: rgba(255, 71, 19, 0.6);
+  color: var(--main-color);
   letter-spacing: 4px;
   margin-right: 20px;
 }
 
 .swiper-pagination-current {
-  color: rgba(255, 71, 19, 1);
+  color: var(--main-color);
 }
 
 .visul__link-wrap {
@@ -727,6 +727,10 @@
   text-align: left;
   width: 85%;
   color: var(--main-color);
+}
+
+.contents__box-info:hover {
+  color: var(--sub-color);
 }
 
 .contents__box-info > .info-type {

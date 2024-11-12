@@ -24,7 +24,7 @@
   height: 100px;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-content: left;
   padding: 0 80px;
   background: #fff;
   z-index: 99999;
@@ -57,6 +57,7 @@
   /* padding: 0 0 0 20px; */
   margin: 0 40px;
   width: 140px;
+  left: 100px;
 
   white-space: nowrap;
   text-align: left;
@@ -164,7 +165,7 @@
 }
 
 .menu-hidden-list a {
-  text-align: left;
+  text-align: center;
   line-height: 50px;
   flex-shrink: 0; /* 6/21 추가*/
   color: var(--main-color);
@@ -226,7 +227,7 @@
 }
 
 .mobile-menu-closeBtn {
-  background-image: url(../images/icon/X@2x.png);
+  background-image: url(../img/close_btn.png);
   background-size: cover;
   width: 22px;
   height: 22px;
@@ -271,10 +272,10 @@
 }
 
 .menus-arrow {
-  background-image: url(../images/icon/arrow-down.png);
+  background-image: url(../img/arrow-down-btn.png);
   background-size: cover;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 .menus-menu {
@@ -285,7 +286,7 @@
 
 .menuLink {
   border-radius: 20px;
-  background: var(--main-color);
+  background: var(--sub-color);
   font-size: 15px;
   font-weight: 500;
   color: white;
@@ -296,7 +297,7 @@
 }
 
 .menus-menu-category {
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px;
   margin-bottom: 7px;
   color: var(--main-color);
@@ -307,7 +308,7 @@
 }
 
 .hidden-menuList.active > .menus-arrow {
-  background-image: url(../images/icon/arrow-up.png);
+  background-image: url(../img/arrow-up-btn.png);
 }
 
 @media (max-width: 1650px) {
@@ -322,17 +323,6 @@
   .link a {
     margin-left: 10px;
   }
-
-  /* .menu {
-    position: unset;
-    transform: translate(0);
-  }
-
-  .menu-hidden {
-    position: unset;
-    transform: translate(0);
-    padding-top: 100px;
-  } */
 
   /* 메뉴 마진 */
   .menu li,
@@ -390,7 +380,7 @@
   }
 
   .logo > a {
-    width: 100px;
+    width: 200px;
   }
 
   .menu {
@@ -424,7 +414,7 @@
   .burger__bar {
     width: 30px;
     height: 3px;
-    background: var(--main-color);
+    background: var(--sub-color);
   }
 }
 
@@ -434,7 +424,7 @@
   }
 
   .logo > a {
-    width: 81px;
+    width: 180px;
   }
 
   .header__inner {
@@ -451,5 +441,8 @@
   .burger__bar {
     width: 22px;
     height: 3px;
+  }
+  .footer__logo img {
+    width: 250px;
   }
 }
