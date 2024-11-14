@@ -1,0 +1,833 @@
+.container {
+  width: 100%;
+}
+
+.container_inner {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 180px;
+}
+.brand-store__wrap > .inner {
+  padding-top: 165px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+/* .container_title {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 65px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 62px;
+
+}
+
+.storeinfo_list_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 1s ease-out;
+}
+.storeinfo_list_wrap.is-slide{
+    left: -100%;
+}
+.storeinfo_list {
+    width: 257px;
+    height: 34px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.storeinfo_list li {
+    height: 100%;
+    border-top: solid 1px rgba(255, 71, 19, 0.39);
+
+}
+.storeinfo_list li.is-active{
+    border-top: solid 1px var(--main-color);
+
+}
+.storeinfo_list li.is-active a{
+    color: var(--main-color);
+} */
+.store-head {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+.store-head > span {
+  font-size: 65px;
+  font-family: var(--font-proxima);
+  font-weight: bold;
+  line-height: 100px;
+  color: var(--sub-color);
+}
+
+.store-head > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.store-head > div.search_margin {
+  margin-bottom: 60px;
+}
+.store-head > div > a:first-child {
+  margin-right: 45px;
+}
+
+.store-head > div > a:last-child {
+  opacity: 0.5;
+}
+
+.store-head > div > a {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 60px;
+  color: var(--main-color);
+  z-index: 9;
+  padding-top: 5px;
+  border-top: 1px solid var(--main-color);
+}
+
+.list_findstore {
+  width: 85px;
+}
+
+.list_openlist {
+  width: 127px;
+}
+
+.storeinfo_list li a {
+  font-size: 23px;
+  font-weight: 700;
+  color: rgba(193, 3, 53, 0.39);
+}
+
+.storeinfo_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.storeinfo_list_wrap {
+  width: 100%;
+}
+
+/* -------------------매장찾기 섹션------------------- */
+.storeinfo_findstore {
+  width: 100%;
+}
+
+.brand_store_pagination {
+  padding-bottom: 196px;
+}
+
+.findstore_top {
+  width: 100%;
+  /* height: 450px; */
+  border-top: solid 1px #dfdfe0;
+  border-bottom: solid 1px #dfdfe0;
+  display: flex;
+}
+
+.findstore_top_map {
+  position: relative;
+  width: 50%;
+  height: 450px;
+
+  /* background-color: azure; */
+  background: url("../img/location-map.png")
+    no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.map-area-wrap {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.map-area {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 400;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--sub-color);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.map-area.active {
+  background: var(--sub-color);
+  color: #fff;
+}
+
+.map-area-Incheon {
+  top: 60px;
+  left: 190px;
+}
+
+.map-area-Seoul {
+  top: 75px;
+  left: 235px;
+}
+.map-area-Gyeonggi-do {
+  top: 115px;
+  left: 260px;
+}
+.map-area-Gangwon-do {
+  top: 70px;
+  left: 330px;
+}
+.map-area-Chungcheongbuk-do {
+  top: 145px;
+  left: 315px;
+}
+.map-area-Sejong {
+  top: 160px;
+  left: 270px;
+}
+.map-area-Chungcheongnam-do {
+  top: 170px;
+  left: 225px;
+}
+.map-area-Daejeon {
+  top: 205px;
+  left: 285px;
+}
+.map-area-Jeollabuk-do {
+  top: 238px;
+  left: 240px;
+}
+.map-area-Jeollanam-do {
+  top: 305px;
+  left: 210px;
+}
+.map-area-Gwangju {
+  top: 292px;
+  left: 260px;
+}
+.map-area-Gyeongsangbuk-do {
+  top: 175px;
+  left: 370px;
+}
+.map-area-Daegu {
+  top: 225px;
+  left: 345px;
+}
+.map-area-Ulsan {
+  top: 245px;
+  left: 395px;
+}
+.map-area-Gyeongsangnam-do {
+  top: 265px;
+  left: 320px;
+}
+.map-area-Busan {
+  top: 290px;
+  left: 370px;
+}
+.map-area-Jeju {
+  top: 385px;
+  left: 175px;
+}
+
+@media (max-width: 500px) {
+  .map-area {
+    width: 39.11111111111px;
+    height: 39.11111111111px;
+  }
+
+  .map-area-Incheon {
+    top: 50px;
+    left: 205px;
+  }
+  .map-area-Seoul {
+    top: 70px;
+    left: 245px;
+  }
+  .map-area-Gyeonggi-do {
+    top: 105px;
+    left: 270px;
+  }
+  .map-area-Gangwon-do {
+    top: 65px;
+    left: 325px;
+  }
+  .map-area-Chungcheongbuk-do {
+    top: 125px;
+    left: 310px;
+  }
+  .map-area-Sejong {
+    top: 145px;
+    left: 275px;
+  }
+  .map-area-Chungcheongnam-do {
+    top: 150px;
+    left: 233px;
+  }
+  .map-area-Daejeon {
+    top: 185px;
+    left: 285px;
+  }
+  .map-area-Jeollabuk-do {
+    top: 210px;
+    left: 245px;
+  }
+  .map-area-Jeollanam-do {
+    top: 265px;
+    left: 225px;
+  }
+  .map-area-Gwangju {
+    top: 255px;
+    left: 270px;
+  }
+  .map-area-Gyeongsangbuk-do {
+    top: 155px;
+    left: 360px;
+  }
+  .map-area-Daegu {
+    top: 200px;
+    left: 340px;
+  }
+  .map-area-Ulsan {
+    top: 215px;
+    left: 385px;
+  }
+  .map-area-Gyeongsangnam-do {
+    top: 240px;
+    left: 320px;
+  }
+  .map-area-Busan {
+    top: 260px;
+    left: 365px;
+  }
+  .map-area-Jeju {
+    top: 340px;
+    left: 190px;
+  }
+}
+
+.findstore_top_searchwrap {
+  width: 50%;
+  height: 100%;
+  padding: 50px 8%;
+}
+
+.findstore_search_title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.findstore_search_title span {
+  font: normal 16px "articulat-cf";
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.findstore_search_locate {
+  width: 360px;
+  height: 38px;
+
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.findstore_search_storename {
+  width: 360px;
+  height: 38px;
+
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_subtitle {
+  width: 52px;
+  font-size: 14px;
+  /* line-height: ; */
+  font-weight: 500;
+  color: var(--main-color);
+  line-height: 36px;
+}
+.search_dropbox_wrap {
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+}
+.search_dropbox {
+  width: 140px;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+.search_dropbox select {
+  width: 100%;
+  height: 100%;
+  border: solid 1px #dfdfe0;
+  border-radius: 5px;
+  background-color: rgba(255, 71, 19, 0);
+  /* border: none; */
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-color);
+  line-height: 36px;
+  text-indent: 15px;
+  background: url("../img/dropbox_btn.svg")
+    no-repeat 88% 48%;
+  /* padding-left: 114px;
+    padding-top: 16px; */
+}
+.search_dropbox select {
+  -webkit-appearance: none; /* for chrome */
+
+  -moz-appearance: none; /*for firefox*/
+
+  appearance: none;
+}
+
+.search_dropbox select::-ms-expand {
+  display: none; /*for IE10,11*/
+}
+/* .search_dropbox select::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 6px;
+} */
+/* ddd */
+
+/* .dropbox_inner_title {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-color);
+    line-height: 36px;
+    text-indent: 15px;
+    position: relative;
+}
+.dropbox-btn{
+    
+    position: absolute;
+    padding: 16px 15px;
+
+    top: 0;
+    right: 0; 
+} */
+.dropbox-btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  width: 8px;
+  height: 6px;
+
+  background: url("../img/dropbox_btn.svg")
+    no-repeat;
+  background-size: cover;
+  /* background-color: aqua; */
+}
+.search_input_wrap {
+  width: 290px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_input_wrap input {
+  width: 242px;
+  height: 100%;
+  border: solid 1px #dfdfe0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.search_input_btn {
+  width: 38px;
+  height: 100%;
+  background-color: var(--sub-color);
+  border-radius: 5px;
+  padding: 10px;
+}
+.search_input_btn::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../img/search.svg")
+    no-repeat;
+  background-size: cover;
+}
+
+.findstore_search_inner {
+  width: 100%;
+  /* height: 50%; */
+}
+.findstore_search_inner:last-child {
+  padding-top: 60px;
+}
+
+.findstore_search_service {
+  width: 360px;
+
+  margin-top: 23px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.findstore_search_service li {
+  width: 50%;
+  height: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  cursor: pointer;
+}
+
+.service_checkbox {
+  width: 18px;
+  height: 18px;
+  border: solid 1px #dfdfe0;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.findstore_search_service li.is-selected .service_checkbox {
+  background-color: var(--sub-color);
+  border: none;
+}
+.findstore_search_service li.is-selected .service_checkbox::after {
+  content: "";
+  width: 8px;
+  height: 5px;
+  display: inline-block;
+  margin-left: 5px;
+  background: url("../img/checkbox.svg")
+    no-repeat;
+  background-size: cover;
+}
+.service_ic {
+  width: 18px;
+  height: 18px;
+  background-color: aqua;
+  margin-right: 6px;
+}
+.service_wifi .service_ic {
+  background: url("../img/wifi.svg")
+    no-repeat;
+  background-size: cover;
+}
+.service_smoking .service_ic {
+  background: url("../img/smoking.svg")
+    no-repeat;
+  background-size: cover;
+}
+.service_parking .service_ic {
+  background: url("../img/parking.svg")
+    no-repeat;
+  background-size: cover;
+}
+.service_parasol .service_ic {
+  background: url("../img/parasol.svg")
+    no-repeat;
+  background-size: cover;
+}
+.service_mobile .service_ic {
+  background: url("../img/mobaile.svg")
+    no-repeat;
+  background-size: cover;
+}
+
+.service_txt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--main-color);
+}
+
+.findstore_bottom {
+  width: 100%;
+  padding-top: 120px;
+}
+
+.findstore_title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--sub-color);
+}
+
+.storeinfo_openlist_wrap {
+  width: 50%;
+}
+
+.findstore_table_wrap {
+  width: 100%;
+  margin-top: 41px;
+  margin-bottom: 60px;
+}
+.findstore_table_wrap table {
+  width: 100%;
+}
+.findstore_table_wrap thead {
+  width: 100%;
+  height: 60px;
+  border-top: solid 1px #C30335;
+  border-bottom: solid 1px #C30335;
+}
+.findstore_table_wrap thead tr th {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-color);
+  text-align: center;
+}
+.findstore_table_wrap thead th:nth-child(1) {
+  width: 20%;
+}
+
+.findstore_table_wrap thead th:nth-child(2) {
+  width: 5%;
+}
+
+.findstore_table_wrap thead th:nth-child(3) {
+  width: 45%;
+}
+
+.findstore_table_wrap thead th:nth-child(4) {
+  width: 15%;
+}
+
+.findstore_table_wrap thead th:nth-child(5) {
+  width: 15%;
+}
+
+.findstore_table_wrap tbody tr {
+  height: 80px;
+  border-bottom: solid 1px rgba(195, 3, 53, 0.2);
+}
+.findstore_table_wrap tbody tr td {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-color);
+  text-align: center;
+  word-break: keep-all;
+}
+.table_service_ic_wrap {
+  padding: 27px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.table_service_ic {
+  width: 26px;
+  height: 26px;
+  /* float: left; */
+  margin: 0 auto;
+}
+.table_service_ic img {
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+@media (max-width: 1380px) {
+  .container_inner {
+    width: 100%;
+  }
+}
+@media (max-width: 1220px) {
+  .storeinfo_findstore {
+    padding: 0 4%;
+  }
+  .storeinfo_wrap {
+    width: 100%;
+  }
+  /* .findstore_table_wrap{
+        padding: 0 5%;
+    } */
+  .storeinfo_openlist_wrap {
+    padding: 0 5%;
+  }
+  .findstore_table_wrap tbody tr td:nth-child(3) {
+    padding: 0 8%;
+  }
+}
+@media (max-width: 1200px) {
+  .store-head > span {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .table_service_ic_wrap {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .findstore_top {
+    display: block;
+    border: none;
+  }
+  .findstore_top_map {
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+    border-top: solid 1px #dfdfe0;
+  }
+  .findstore_top_searchwrap {
+    width: 600px;
+    margin: 0 auto;
+
+    border-bottom: solid 1px #dfdfe0;
+  }
+  .findstore_bottom {
+  }
+}
+@media (max-width: 770px) {
+  .findstore_table_wrap thead tr th {
+    font-size: 12px;
+  }
+  .findstore_table_wrap tbody tr td {
+    font-size: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .store-head > span {
+    font-size: 52px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 610px) {
+  .brand_store_pagination {
+    padding-bottom: 90px;
+  }
+  .findstore_top {
+    padding: 0 4%;
+  }
+  .findstore_bottom {
+    padding: 0 4%;
+    padding-bottom: 30px;
+  }
+  .findstore_title {
+    margin-top: 41px;
+  }
+  .findstore_table_wrap {
+    overflow-x: scroll;
+  }
+  .findstore_table_wrap table {
+    width: 170%;
+  }
+  .findstore_table_wrap::-webkit-scrollbar {
+    height: 5px;
+  }
+  .findstore_table_wrap::-webkit-scrollbar-track {
+    background-color: rgba(193, 3, 53, 0.2);
+    border-radius: 2.5px;
+  }
+  .findstore_table_wrap::-webkit-scrollbar-thumb {
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 2.5px;
+  }
+}
+@media (max-width: 600px) {
+  .findstore_top_map {
+    width: 100%;
+  }
+  .findstore_top_searchwrap {
+    width: 100%;
+  }
+  .container_title {
+    text-align: center;
+    font-size: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .store-head > span {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .findstore_top_map {
+    width: 100%;
+    height: 400px;
+  }
+  .findstore_top_searchwrap {
+    padding: 60px 0;
+  }
+  .findstore_search_locate {
+    width: 350px;
+  }
+  .findstore_search_storename {
+    width: 350px;
+  }
+  .search_subtitle {
+    width: 17%;
+  }
+  .findstore_search_locate {
+    width: 100%;
+  }
+  .search_dropbox_wrap {
+    width: 82%;
+  }
+  .search_dropbox {
+    width: 48%;
+  }
+  .search_input_wrap {
+    width: 82%;
+  }
+  .findstore_search_storename {
+    width: 100%;
+  }
+  .search_input_wrap input {
+    width: 83%;
+  }
+}
+
+@media (max-width: 500px) {
+  .store-head > span {
+    font-size: 38px;
+    line-height: 1;
+  }
+
+  .container_inner {
+    padding-top: 140px;
+  }
+
+  .store-head > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .store-head > div > a {
+    font-size: 16px;
+  }
+
+  .store-head > div > a:first-child {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,67 @@
+
+
+<!-- start of :: footer -->
+<footer id="footer" class="footer">               
+    <div class="inner">
+        <a class="footer__logo"><img src="./img/twosome_logo_white.svg" alt=""/></a>
+        <div class="footer__link">
+            <a href="https://x.com/TWOSOMEsays" target="_blank"><img src="./img/f-link-twitter.svg" alt="" /></a>
+            <a href="https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q" target="_blank"><img src="./img/f-link-youtube.svg" alt=""/></a>
+            <a href="https://www.instagram.com/atwosomeplace_official/" target="_blank"><img src="./img/f-link-instagram.svg" alt=""/></a>
+        </div>
+        <ul class="footer__list">
+            <li><a class="privacy-pop_up-button" href="#none">개인정보취급방침</a></li>
+        </ul>
+        <div class="footer__info">
+            <div>
+                <span>주소 : 서울특별시 중구 을지로 170, 8층(을지로4가, 을지트윈타워)투썸플레이스(주)</span>
+                <div class="info-devide__bar dv-remove"></div>
+                <span>주소 : 서울특별시 중구 을지로4가 323 을지트윈타워 8층 투썸플레이스(주)</span>
+            </div>
+            <div>
+                <div>
+                    <span>대표이사 : 문영주</span>
+                    <div class="info-devide__bar"></div>
+                    <span>사업자등록번호 : 404-86-01054</span>
+                    <div class="info-devide__bar dv-remove"></div>
+                </div>
+                <div>
+                    <span><a href="tel:1577-4410" style="color: #FFF;">고객센터 : 1577-4410</a></span>
+                    <div class="info-devide__bar"></div>
+                    <span>대표이메일 : helpmaster@twosome.co.kr</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <span>Copyright ⓒ 2021 A TWOSOME PLACE Co., LTD. All Rights Reserved.</span>
+        </div>
+    </div>
+    
+    <script>
+      document
+        .querySelector(".footer__totop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+    
+      let privacyBtn = document.querySelector(".privacy-pop_up-button");
+      let popUpPage = document.querySelector(".pop_up_wrap");
+      let popUpCloseBtn = document.querySelector(".footer_popup_close_btn");
+      const Body = document.getElementsByClassName("body");
+    
+      privacyBtn.addEventListener("click", function () {
+        popUpPage.classList.remove("l-hidden");
+        $("body").css("overflow", "hidden");
+      });
+    
+      popUpCloseBtn.addEventListener("click", function () {
+        popUpPage.classList.add("l-hidden");
+        $("body").css("overflow", "unset");
+      });
+    </script>
+    
+</footer>
+<!-- end of :: footer -->   

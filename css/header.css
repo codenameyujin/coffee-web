@@ -79,6 +79,7 @@
     background: var(--main-color);
     border-radius: 25px; */
   cursor: pointer;
+  color: var(--sub-color);
 }
 
 .link a {
@@ -418,6 +419,11 @@
   }
 }
 
+@media (max-width: 640px) {
+  .footer__logo img {
+    width: 364px;
+  }
+}
 @media (max-width: 540px) {
   .header__inner {
     height: 55px;
@@ -443,6 +449,7 @@
     height: 3px;
   }
   .footer__logo img {
-    width: 250px;
+    width: 220px;
   }
 }
+

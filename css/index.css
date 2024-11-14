@@ -368,11 +368,11 @@
 /* 2nd section - menu */
 /* 2nd section - menu */
 /* 2nd section - menu */
-.menu__wrap {
+/* .menu__wrap {
   width: 100%;
-  height: 100vh;
-  background-color: tomato;
-}
+  height: 100vh; */
+  /* background-color: tomato; */
+/* } */
 
 /* 2nd section - menu end */
 /* 2nd section - menu end */
@@ -1138,6 +1138,16 @@
     bottom: 0%;
     left: 50%;
   }
+}
+
+@media (max-width: 640px) {
+  .sns__header > div > p {
+    font-size: 44px;
+  }
+  .imgs__inner > img {
+    width: 26%;
+    margin: 0 10px;
+}
 }
 
 @media (max-width: 540px) {

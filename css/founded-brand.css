@@ -1,0 +1,24 @@
+.footer__totop {
+    position: static;
+  }
+
+  @media (max-width: 1200px) {
+    .footer__totop {
+      position: absolute;
+      bottom: 15px;
+      right: 4%;
+    }
+  }
+  @media (max-width:900px){
+    .brand-history__wrap > .inner{
+      padding-bottom: 160px;
+    }
+  }
+  @media (max-width:650px){
+    .container_inner{
+      padding-bottom: 250px;
+    }
+    .value .competitivity_ofo{
+      padding-bottom: 300px;
+    }
+  }

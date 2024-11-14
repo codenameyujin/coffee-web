@@ -1,0 +1,243 @@
+.container_inner {
+  width: 1760px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.brand_competi_wrap {
+  width: 1360px;
+  margin: 0 auto;
+  padding-top: 180px;
+  padding-bottom: 217px;
+}
+
+.brand_competi_top {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.brand_competi_title {
+  font-size: 65px;
+  font-family: var(--font-proxima);
+
+  font-weight: 700;
+  color: var(--sub-color);
+  /* margin-top: 16%; */
+  margin-bottom: 45px;
+  opacity: 0;
+  position: relative;
+  top: -2%;
+}
+
+.brand_competi_video {
+  width: 100%;
+  opacity: 0;
+  position: relative;
+  bottom: -0.2%;
+}
+
+.brand_competi_wrap section {
+  width: 100%;
+  padding-top: 260px;
+}
+.brand_competi_wrap section:first-child {
+  padding-top: 0;
+}
+.brand_competi_wrap section > div {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 100px; */
+}
+
+.brand_competi_img {
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  position: relative;
+  top: -2%;
+}
+
+.brand_competi_img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.brand_competi_subtitle {
+  font-size: 48px;
+  font-family: var(--font-proxima);
+
+  font-weight: 700;
+  color: var(--sub-color);
+  padding-top: 6%;
+  position: relative;
+  bottom: -1%;
+  opacity: 0;
+}
+
+.brand_competi_txt {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  word-break: keep-all;
+  color: var(--sub-color);
+  padding-top: 4%;
+  position: relative;
+  bottom: -1%;
+  opacity: 0;
+}
+
+.brand_competi_listdots {
+  width: 32px;
+  height: 160px;
+  position: fixed;
+  top: 44%;
+  right: 80px;
+}
+
+.brand_competi_listdots.is-hide {
+  display: none;
+}
+
+.competi_dots {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.competi_dots li {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--sub-color);
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.competi_dots li span {
+  width: 12px;
+  height: 12px;
+  border: solid 1px var(--sub-color);
+  border-radius: 6px;
+}
+
+.competi_dots li.is-active {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+
+.competi_dots li.is-active span {
+  border: none;
+  background-color: var(--sub-color);
+}
+
+.mobile_br {
+  display: none;
+}
+
+@media (max-width: 1760px) {
+  .container_inner {
+    width: 100%;
+  }
+
+  .brand_competi_listdots {
+    right: 4%;
+  }
+}
+
+@media (max-width: 1360px) {
+  .brand_competi_wrap {
+    width: 100%;
+    padding: 0px 4%;
+    padding-top: 180px;
+    padding-bottom: 200px;
+  }
+  .brand_competi_wrap section {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brand_competi_wrap {
+    /* padding-bottom: 0; */
+    padding-top: 160px;
+  }
+
+  .brand_competi_list1 {
+    margin-top: 0;
+  }
+
+  .brand_competi_title {
+    font-size: 55px;
+    text-align: center;
+  }
+  .brand_competi_subtitle {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .brand_competi_txt {
+    text-align: center;
+  }
+
+  .brand_competi_img {
+    margin-top: 0px;
+  }
+  .brand_competi_title {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 500px) {
+  .brand_competi_top {
+    height: auto;
+  }
+  .brand_competi_title {
+    font-size: 28px;
+  }
+  .brand_competi_subtitle {
+    font-size: 26px;
+  }
+
+  .brand_competi_txt {
+    font-size: 16px;
+  }
+
+  .brand_competi_listdots {
+    display: none;
+  }
+  .brand_competi_wrap section {
+    width: 100%;
+    padding-top: 160px;
+  }
+  .brand_competi_wrap section:first-child {
+    padding-top: 0;
+  }
+  .mobile_br {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .c-video {
+    height: 550px;
+  }
+}
+@media (max-width: 700px) {
+  .c-video {
+    height: 365px;
+  }
+}
+@media (max-width: 500px) {
+  .c-video {
+    height: 260px;
+  }
+}

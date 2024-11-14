@@ -60,7 +60,7 @@ body {
   font: normal 12px "articulat-cf";
   font-weight: 400;
   line-height: 36px;
-  color: #ff4713;
+  color: var(--sub-color);
 }
 /* #wrap {
   height: 100vh;
@@ -93,14 +93,14 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  color: #ff4713;
+  color: var(--sub-color);
 }
 
 .footer_popup_title-lead {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  color: #ff4713;
+  color: var(--sub-color);
   margin-top: 10px;
 }
 
@@ -122,7 +122,7 @@ body {
 .footer_privacy_title {
   font-size: 24px;
   font-weight: 500;
-  color: #ff4713;
+  color: var(--sub-color);
 }
 .privacy_txt {
   width: 100%;
@@ -133,7 +133,7 @@ body {
   width: 5px;
 }
 .privacy_txt::-webkit-scrollbar-thumb {
-  background-color: #ff4713;
+  background-color: var(--sub-color);
   height: 180px;
   border-radius: 2.5px;
 }
@@ -147,7 +147,7 @@ body {
   padding: 20px;
   word-break: keep-all;
   font-size: 14px;
-  color: #ff4713;
+  color: var(--sub-color);
   line-height: 22px;
 
   margin-top: 21px;
@@ -194,27 +194,27 @@ body {
 @font-face {
   font-family: "Noto Sans KR";
   font-weight: 100;
-  src: url("../fonts/NotoSansKR-Thin.woff") format("woff");
+  src: url("../font/NotoSansKR-Thin.ttf") format("ttf");
 }
 @font-face {
   font-family: "Noto Sans KR";
   font-weight: 300;
-  src: url("../fonts//NotoSansKR-Light.woff") format("woff");
+  src: url("../font/NotoSansKR-Light.ttf") format("ttf");
 }
 @font-face {
   font-family: "Noto Sans KR";
   font-weight: 400;
-  src: url("../fonts//NotoSansKR-Regular.woff") format("woff");
+  src: url("../font/NotoSansKR-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "Noto Sans KR";
   font-weight: 500;
-  src: url("../fonts//NotoSansKR-Medium.woff") format("woff");
+  src: url("../font/NotoSansKR-Medium.ttf") format("ttf");
 }
 @font-face {
   font-family: "Noto Sans KR";
   font-weight: 700;
-  src: url("../fonts/NotoSansKR-Bold.woff") format("woff");
+  src: url("../font/NotoSansKR-Bold.ttf") format("ttf");
 }
 
 /** Ultra Light */
@@ -281,7 +281,7 @@ body {
   display: inline-block;
   width: 4px;
   height: 8px;
-  background: url("../images/icon/c-page-prev-ic.svg") no-repeat;
+  background: url("../img/prev.svg") no-repeat;
   background-size: cover;
 }
 .brand_store_pagination_next {
@@ -295,7 +295,7 @@ body {
   display: inline-block;
   width: 4px;
   height: 8px;
-  background: url("../images/icon/c-page-next-ic.svg") no-repeat;
+  background: url("../img/next.svg") no-repeat;
   background-size: cover;
 }
 .brand_store_pagelist li {
@@ -308,10 +308,10 @@ body {
   font-family: var(--font-proxima);
   font-weight: 400;
   line-height: 36px;
-  color: #ff4713;
+  color: var(--sub-color);
 }
 .brand_store_pagelist li.is-selected {
-  background-color: #ff4713;
+  background-color: var(--sub-color);
   border-radius: 18px;
 }
 .brand_store_pagelist li.is-selected a {
@@ -382,7 +382,7 @@ body {
 /* 창업하기 페이지 - 하단 픽스된 섹션 */
 .founded_bottom_fixed {
   width: 100%;
-  background-color: #ff4713;
+  background-color: var(--sub-color);
   position: absolute;
   left: 0;
   bottom: 100%;
@@ -576,7 +576,7 @@ appearance: none;
 .input_btn a {
   font-size: 16px;
   font-weight: 700;
-  color: #ff4713;
+  color: var(--sub-color);
 }
 
 .fixed_mobile_br {
@@ -696,7 +696,7 @@ appearance: none;
     bottom: 30px;
   }
   .founded_bottom_fixed .totop__btn-circle{
-    background-color: #ff4713;
+    background-color: var(--sub-color);
     border-radius: 50%;
   }
 }
@@ -777,7 +777,7 @@ select option {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  color: #ff4713;
+  color: var(--sub-color);
 }
 .privacy_txt {
   width: 100%;
@@ -788,7 +788,7 @@ select option {
   width: 5px;
 }
 .privacy_txt::-webkit-scrollbar-thumb {
-  background-color: #ff4713;
+  background-color: var(--sub-color);
   height: 180px;
   border-radius: 2.5px;
 }
@@ -802,7 +802,7 @@ select option {
   padding: 20px;
   word-break: keep-all;
   font-size: 14px;
-  color: #ff4713;
+  color: var(--sub-color);
   line-height: 22px;
 
   margin-top: 21px;
@@ -856,7 +856,7 @@ select option {
   height: 80px;
   width: 80px;
   border-radius: 80px;
-  border: 3px solid  rgba(255,71,19,0.5);
+  border: 3px solid  rgba(195,3,53,0.5);
 
   top: 28%;
   top: -webkit-calc(50% - 43px);
@@ -879,7 +879,7 @@ select option {
   width: 11px;
   height: 11px;
   border-radius: 10px;
-  background-color: #ff4713;
+  background-color: var(--sub-color);
 }
 
 @-webkit-keyframes loader1{
@@ -972,7 +972,7 @@ select option {
   z-index: 10;
 }
 .mobile_popup_inner .swiper-pagination-current{
-  color: #ff4713;
+  color: var(--sub-color);
 }
 @media (max-width:500px){
   .link-box{
@@ -994,7 +994,7 @@ select option {
 }
 .there-is-nothing .txt{
   font-size: 20px;
-  color: #ff4713;
+  color: var(--sub-color);
   text-align: center;
 }
 @media(max-width:1024px){
